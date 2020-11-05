@@ -18,8 +18,8 @@ resource "aws_security_group_rule" "test_sg_rule" {
   type        = "ingress"
   protocol    = "tcp"
   cidr_blocks = ["10.116.248.0/23"]
-  from_port   = "${element(var.ingress_web_ports_1, count.index)}"
-  to_port     = "${element(var.ingress_web_ports_1, count.index)}"
+  from_port   = element(var.ingress_web_ports_1, count.index)
+  to_port     = element(var.ingress_web_ports_1, count.index)
 
-  security_group_id = "${aws_security_group.test_sg.id}"
+  security_group_id = aws_security_group.test_sg.id
 }
