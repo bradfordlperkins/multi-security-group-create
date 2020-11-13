@@ -1,9 +1,9 @@
 resource "aws_security_group" "test_sg_new_1" {
-  name = "001-e1-build1-sg-000"
+  name = "000-e1-tools-sg-000"
   description = "Allow traffic with the FedRAMP boundary"
-  vpc_id = "vpc-0c6a1b725e18ba61b"
+  vpc_id = "vpc-06725e59359dd80e3"
   tags = {
-    Name = "001-e1-build1-sg-000"
+    Name = "000-e1-tools-sg-000"
   }
 
   #Ingress rule - 1 port, many sources
