@@ -69,7 +69,6 @@ resource "aws_security_group" "test_sg_new_1" {
       cidr_blocks = ["10.68.67.0/24"]
       description = "WCO Datacenter"
     }
-  }
 
   ingress {
       from_port   = 0
@@ -78,7 +77,6 @@ resource "aws_security_group" "test_sg_new_1" {
       cidr_blocks = ["10.68.81.0/24"]
       description = "WCO Datacenter"
     }
-  }
 
   ingress {
       from_port   = 0
@@ -87,7 +85,6 @@ resource "aws_security_group" "test_sg_new_1" {
       cidr_blocks = ["10.68.69.0/24"]
       description = "WCO Datacenter"
     }
-  }
 
   ingress {
       from_port   = 0
@@ -96,7 +93,6 @@ resource "aws_security_group" "test_sg_new_1" {
       cidr_blocks = ["10.69.81.0/24"]
       description = "MVA Datacenter"
     }
-  }
 
   ingress {
       from_port   = 0
@@ -105,7 +101,6 @@ resource "aws_security_group" "test_sg_new_1" {
       cidr_blocks = ["10.69.69.0/24"]
       description = "MVA Datacenter"
     }
-  }
 
   ingress {
       from_port   = 0
