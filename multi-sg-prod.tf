@@ -1,4 +1,4 @@
-resource "aws_security_group" "test_sg_new_1" {
+resource "aws_security_group" "test_sg_new_4" {
   name = "001-e1-build1-sg-000"
   description = "Allow traffic with the FedRAMP boundary"
   vpc_id = "vpc-0c265a0e520a78b4f"
