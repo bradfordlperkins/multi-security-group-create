@@ -144,7 +144,7 @@ resource "aws_security_group" "test_sg_new_1" {
 
   ingress {
       from_port   = 0
-      to_port     = 0
+      to_port     = 65535
       protocol    = "udp"
       cidr_blocks = ["10.0.0.80/32"]
       description = "Temporary SBC"
